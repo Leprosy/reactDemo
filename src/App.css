@@ -1,0 +1,14 @@
+.App {
+    margin: 1rem;
+    color: #666;
+}
+.App h1 small {
+    font-size:10px
+}
+
+.App .TestComponent {
+    border: 1px solid #999;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #666;
+}
