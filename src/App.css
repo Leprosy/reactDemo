@@ -2,6 +2,10 @@
     margin: 1rem;
     color: #666;
 }
+.App, .App input, .App textarea, .App button{
+    font-family: Arial, Sans;
+    font-size: 14px;
+}
 .App h1 small {
     font-size:10px
 }
@@ -12,3 +16,23 @@
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px #666;
 }
+
+.App .NoteComponent {
+    display: flex;
+}
+.App .NoteComponent .NoteList, .App .NoteComponent .NoteEditor {
+    border: 1px solid #999;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #666;
+}
+.App .NoteComponent .NoteList {
+    flex: 1;
+    margin-right: 10px;
+}
+.App .NoteComponent .NoteEditor {
+    flex: 3;
+}
+
+.App input{padding: 5px; width: 100%; margin-bottom: 10px; border: none; border-bottom: 1px solid #ccc}
+.App textarea{padding: 5px; width:100%; height:200px; border: none}

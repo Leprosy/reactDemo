@@ -22,15 +22,19 @@ class NoteListComponent extends Component{
         let items = this.state.notes.map((item, index) =>
             <li onClick={() => this.handleClick(index) } key={index} id={"Note_" + index}>{item.title}</li>);
 
-        return(<div className="TestComponent">
+        return(<div className="NoteComponent">
+                <div className="NoteList">
                    <h3>{this.props.title}</h3>
-                   <hr />
-                   {items}
                    <button onClick={() => this.handleAdd()}>Add note</button>
                    <hr />
-                   <input type="text" id="NoteTitle" value={this.state.title} onChange={() => this.handleChange()} /><br />
+                   {items}
+                   <hr />
+               </ div>
+               <div className="NoteEditor">
+                   <input type="text" id="NoteTitle" value={this.state.title} onChange={() => this.handleChange()} />
                    <textarea id="NoteContent" onChange={() => this.handleChange()} value={this.state.content}></textarea>
-               </div>);
+               </div>
+             </div>);
     }
 
     handleAdd() {
